@@ -16,7 +16,7 @@ data_list = []
 def form_upload() :
     if request.method == "POST":
         nama_penyidik = request.form.get("nama_penyidik")
-        nama_kanit = request.form.get("nama_penyidik")
+        nama_kanit = request.form.get("nama_kanit")
         file = request.files.get("file")
 
         if not nama_penyidik or not nama_kanit or not file :
